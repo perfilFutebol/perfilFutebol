@@ -8,17 +8,16 @@
  module.exports = {
 
  	attributes: {
- 		id: {
- 			'type': 'int',
- 			'primaryKey': true
- 		},
-
  		nome: {
- 			'type': 'string'
+ 			type: 'string',
+ 			required: true,
+ 			unique: true,
+ 			size: 100
  		},
 
  		descricao: {
- 			'type': 'string'
+ 			type: 'string',
+ 			size: 250
  		}
  	}
  };

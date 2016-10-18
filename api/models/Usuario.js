@@ -8,25 +8,30 @@
  module.exports = {
 
  	attributes: {
- 		id: {
- 			'type': 'int',
- 			'primaryKey': true
- 		},
-
  		nome: {
- 			'type': 'string'
+ 			type: 'string',
+ 			required: true,
+ 			size: 100
  		},
 
  		login: {
- 			'type': 'string'
+ 			type: 'string',
+ 			required: true,
+ 			unique: true,
+ 			size: 10
  		},
 
  		senha:{
- 			'type': 'string'
+ 			type: 'string',
+ 			required: true,
+ 			size: 20
  		},
 
  		email:{
- 			'type': 'string'
+ 			type: 'string',
+ 			required: true,
+ 			unique: true,
+ 			size: 100
  		}
  	}
  };

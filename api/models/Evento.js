@@ -8,21 +8,20 @@
  module.exports = {
 
  	attributes: {
- 		id: {
- 			'type': 'int',
- 			'primaryKey': true
- 		},
-
  		nome: {
- 			'type': 'string'
+ 			type: 'string',
+ 			required: true,
+ 			size: 100
  		},
 
  		descricao: {
- 			'type': 'string'
+ 			type: 'string',
+ 			size:250
  		},
 
  		data: {
- 			'type': 'datetime'
+ 			type: 'datetime',
+ 			required: true
  		}
  	}
  };

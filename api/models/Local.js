@@ -8,17 +8,10 @@
  module.exports = {
 
  	attributes: {
- 		id: {
- 			'type': 'int',
- 			'primaryKey': true
- 		},
-
  		nome: {
- 			'type': 'string'
- 		},
-
- 		endereco: {
- 			'type': 'string'
+ 			type: 'string',
+ 			required: true,
+ 			size: 100
  		}
  	}
  };
