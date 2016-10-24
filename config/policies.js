@@ -17,23 +17,55 @@
  */
 
 
-module.exports.policies = {
+ module.exports.policies = {
 
-  /***************************************************************************
-  *                                                                          *
-  * Default policy for all controllers and actions (`true` allows public     *
-  * access)                                                                  *
-  *                                                                          *
-  ***************************************************************************/
+	/***************************************************************************
+	*                                                                          *
+	* Default policy for all controllers and actions (`true` allows public     *
+	* access)                                                                  *
+	*                                                                          *
+	***************************************************************************/
 
-  // '*': true,
+	'*': true,
 
-  /***************************************************************************
-  *                                                                          *
-  * Here's an example of mapping some policies to run before a controller    *
-  * and its actions                                                          *
-  *                                                                          *
-  ***************************************************************************/
+	'CampeonatoController': {
+		'*': 'isAuthenticated'
+	},
+
+	'EnderecoController': {
+		'*': 'isAuthenticated'
+	},
+
+	'EsporteController': {
+		'*': 'isAuthenticated'
+	},
+
+	'EventoController': {
+		'*': 'isAuthenticated'
+	},
+
+	'HabilidadeController': {
+		'*': 'isAuthenticated'
+	},
+
+	'LocalController': {
+		'*': 'isAuthenticated'
+	},
+
+	'TimeController': {
+		'*': 'isAuthenticated'
+	},
+
+	'UsuarioController': {
+		'*': 'isAuthenticated'
+	}
+
+	/***************************************************************************
+	*                                                                          *
+	* Here's an example of mapping some policies to run before a controller    *
+	* and its actions                                                          *
+	*                                                                          *
+	***************************************************************************/
 	// RabbitController: {
 
 		// Apply the `false` policy as the default for all of RabbitController's actions
