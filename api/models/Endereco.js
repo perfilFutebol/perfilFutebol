@@ -8,6 +8,7 @@
 module.exports = {
 
   attributes: {
+    //Atributos
   	logradouro: {
   		type: 'string',
   		required: true,
@@ -47,7 +48,12 @@ module.exports = {
   	cep: {
   		type: 'integer',
   		required: true
-  	}
+  	},
+
+    //Associações
+    local: {
+      model: 'local'
+    }
   }
 };
 

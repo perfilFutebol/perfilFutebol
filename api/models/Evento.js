@@ -8,6 +8,7 @@
  module.exports = {
 
  	attributes: {
+ 		//Atributos
  		nome: {
  			type: 'string',
  			required: true,
@@ -22,6 +23,19 @@
  		data: {
  			type: 'datetime',
  			required: true
+ 		},
+
+ 		//Associações
+ 		local: {
+ 			model: 'local'
+ 		},
+
+ 		esporte: {
+ 			model: 'esporte'
+ 		},
+
+ 		campeonato: {
+ 			model: 'campeonato'
  		}
  	}
  };

@@ -8,10 +8,26 @@
  module.exports = {
 
  	attributes: {
+ 		//Atributos
  		nome: {
  			type: 'string',
  			required: true,
  			size: 100
+ 		},
+
+ 		//Associações
+ 		esporte: {
+ 			collection: 'esporte',
+ 			via: 'local'
+ 		},
+
+ 		evento: {
+ 			collection: 'evento',
+ 			via: 'local'
+ 		},
+
+ 		endereco: {
+ 			model: 'endereco'
  		}
  	}
  };

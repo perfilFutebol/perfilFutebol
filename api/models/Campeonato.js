@@ -8,6 +8,7 @@
  module.exports = {
 
  	attributes: {
+ 		//Atributos
  		nome: {
  			type: 'string',
  			required: true,
@@ -17,6 +18,16 @@
  		descricao: {
  			type: 'string',
  			size: 250
+ 		},
+
+ 		//Associações
+ 		evento: {
+ 			collection: 'evento',
+ 			via: 'campeonato'
+ 		},
+
+ 		esporte: {
+ 			model: esporte
  		}
  	}
  };

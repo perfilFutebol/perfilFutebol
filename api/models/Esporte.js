@@ -8,11 +8,43 @@
  module.exports = {
 
  	attributes: {
+ 		//Atributos
  		nome: {
  			type: 'string',
  			required: true,
  			unique: true,
  			size: 100
+ 		},
+
+ 		//Associações
+ 		time: {
+ 			collection: 'time',
+ 			via: 'esporte'
+ 		},
+
+ 		habilidade: {
+ 			collection: 'habilidade',
+ 			via: 'esporte'
+ 		},
+
+ 		local: {
+ 			collection: 'local',
+ 			via: 'esporte'
+ 		},
+
+ 		usuario: {
+ 			collection: 'usuario',
+ 			via: 'esporte'
+ 		},
+
+ 		evento:{
+ 			collection: 'evento',
+ 			via: 'esporte'
+ 		},
+
+ 		campeonato: {
+ 			collection: 'campeonato',
+ 			via: 'esporte'
  		}
  	}
  };

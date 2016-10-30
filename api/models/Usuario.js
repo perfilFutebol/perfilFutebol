@@ -10,6 +10,7 @@
  module.exports = {
 
  	attributes: {
+ 		//Atributos
  		nome: {
  			type: 'string',
  			required: true,
@@ -36,6 +37,18 @@
  			size: 100
  		},
 
+ 		//Associações
+ 		time: {
+ 			collection: 'time',
+ 			via: 'integrante'
+ 		},
+
+ 		habilidade: {
+ 			collection: 'habilidade',
+ 			via: 'usuario'
+ 		}
+
+ 		//Funções
  		toJSON: function() {
  			var obj = this.toObject();
  			delete obj.senha;

@@ -8,11 +8,22 @@
  module.exports = {
 
  	attributes: {
+ 		//Atributos
  		nome: {
  			type: 'string',
- 			requires: true,
+ 			required: true,
  			unique: true,
  			size:50
+ 		},
+
+ 		integrante: {
+ 			collection: 'usuario',
+ 			via: 'time'
+ 		},
+
+ 		//Associações
+ 		esporte: {
+ 			model: 'esporte'
  		}
  	}
  };
