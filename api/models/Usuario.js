@@ -46,6 +46,11 @@
  		habilidade: {
  			collection: 'habilidade',
  			via: 'usuario'
+ 		},
+
+ 		organizacao: {
+ 			collection: 'organizacao',
+ 			via: 'usuario'
  		}
 
  		//Funções
