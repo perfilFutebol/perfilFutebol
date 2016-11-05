@@ -25,6 +25,12 @@
  			required: true
  		},
 
+ 		acesso: {
+ 			type: 'string',
+ 			enum: ['Publico', 'Privado'],
+ 			required: true
+ 		},
+
  		//Associações
  		local: {
  			model: 'local'
@@ -36,6 +42,11 @@
 
  		campeonato: {
  			model: 'campeonato'
+ 		},
+
+ 		time: {
+ 			collection: 'time',
+ 			via: 'evento'
  		}
  	}
  };

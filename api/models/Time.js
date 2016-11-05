@@ -28,6 +28,11 @@
 
  		organizacao: {
  			model: 'organizacao'
+ 		},
+
+ 		evento: {
+ 			collection: 'evento',
+ 			via: 'time'
  		}
  	}
  };
