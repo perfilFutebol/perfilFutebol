@@ -27,7 +27,7 @@
  		},
 
  		esporte: {
- 			model: esporte
+ 			model: 'esporte'
  		}
  	}
  };

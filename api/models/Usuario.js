@@ -51,7 +51,12 @@
  		organizacao: {
  			collection: 'organizacao',
  			via: 'usuario'
- 		}
+ 		},
+
+ 		esporte: {
+ 			collection: 'esporte',
+ 			via: 'usuario'
+ 		},
 
  		//Funções
  		toJSON: function() {
