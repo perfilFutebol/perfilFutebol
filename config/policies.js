@@ -26,39 +26,39 @@
 	*                                                                          *
 	***************************************************************************/
 
-	'*': true,
+	// '*': true,
 
-	'CampeonatoController': {
-		'*': 'isAuthenticated'
-	},
+	// 'CampeonatoController': {
+	// 	'*': 'isAuthenticated'
+	// },
 
-	'EnderecoController': {
-		'*': 'isAuthenticated'
-	},
+	// 'EnderecoController': {
+	// 	'*': 'isAuthenticated'
+	// },
 
-	'EsporteController': {
-		'*': 'isAuthenticated'
-	},
+	// 'EsporteController': {
+	// 	'*': 'isAuthenticated'
+	// },
 
-	'EventoController': {
-		'*': 'isAuthenticated'
-	},
+	// 'EventoController': {
+	// 	'*': 'isAuthenticated'
+	// },
 
-	'HabilidadeController': {
-		'*': 'isAuthenticated'
-	},
+	// 'HabilidadeController': {
+	// 	'*': 'isAuthenticated'
+	// },
 
-	'LocalController': {
-		'*': 'isAuthenticated'
-	},
+	// 'LocalController': {
+	// 	'*': 'isAuthenticated'
+	// },
 
-	'TimeController': {
-		'*': 'isAuthenticated'
-	},
+	// 'TimeController': {
+	// 	'*': 'isAuthenticated'
+	// },
 
-	'UsuarioController': {
-		'*': 'isAuthenticated'
-	}
+	// 'UsuarioController': {
+	// 	'*': 'isAuthenticated'
+	// }
 
 	/***************************************************************************
 	*                                                                          *
